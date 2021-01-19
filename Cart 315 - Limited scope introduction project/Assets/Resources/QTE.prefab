@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7253236178140950073}
   - component: {fileID: 7781829965580845482}
   m_Layer: 5
-  m_Name: Kill him with a GUN.
+  m_Name: Ask about the truth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Kill him with a gun.
+  m_text: Ask about the truth
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9b89bc39d8d988a42a7fc479ffbb5405, type: 2}
   m_sharedMaterial: {fileID: 9094389695615200376, guid: 9b89bc39d8d988a42a7fc479ffbb5405, type: 2}
@@ -146,7 +146,7 @@ GameObject:
   - component: {fileID: 3954157903136550226}
   - component: {fileID: 5290853351502242136}
   m_Layer: 5
-  m_Name: You need to move on.
+  m_Name: Watch snow fall together
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -199,7 +199,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: You need to move on.
+  m_text: Watch snow fall together
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9b89bc39d8d988a42a7fc479ffbb5405, type: 2}
   m_sharedMaterial: {fileID: 9094389695615200376, guid: 9b89bc39d8d988a42a7fc479ffbb5405, type: 2}
@@ -281,7 +281,7 @@ GameObject:
   - component: {fileID: 605025495232286705}
   - component: {fileID: 7564156248468418033}
   m_Layer: 5
-  m_Name: You need to move on.
+  m_Name: Watch snow fall together
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -304,7 +304,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -286, y: -131}
+  m_AnchoredPosition: {x: -491, y: -131}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5789511838764264538
@@ -389,13 +389,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 1087368300008831226, guid: ab0d3729f33e3054aaca21d5f54dfc8b, type: 3}
+        m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+        m_MethodName: WatchSnowFallTogether
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -515,7 +515,7 @@ GameObject:
   - component: {fileID: 5109502078250923724}
   - component: {fileID: 3479386632046535884}
   m_Layer: 5
-  m_Name: Kill him with a GUN.
+  m_Name: Ask about the truth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -622,4 +622,16 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5109502078250923724}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1087368300008831226, guid: ab0d3729f33e3054aaca21d5f54dfc8b, type: 3}
+        m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+        m_MethodName: AskAboutTheTruth
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

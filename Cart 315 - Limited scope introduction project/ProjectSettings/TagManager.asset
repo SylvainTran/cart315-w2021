@@ -12,6 +12,12 @@ TagManager:
   - OutsideBarAreaCam
   - Initializer
   - QTE
+  - SnowCam
+  - CreeperFaceCam
+  - BeerCrate
+  - DarrylTable
+  - NeganTable
+  - BeerCrateObstacle
   layers:
   - Default
   - TransparentFX

@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class StoryState : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+    public static bool SnowCutscene = false;
+    public static bool TookBeerCrate = false;
+    public static bool HelpedBarman = false;
+
+    void OnEnable() {
+        BeerCrate.OnStoryAction += UpdateStoryState;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    void OnDisable() {
+        BeerCrate.OnStoryAction -= UpdateStoryState;
+    }
+
+    void UpdateStoryState() {
+        TookBeerCrate = true;
     }
 }

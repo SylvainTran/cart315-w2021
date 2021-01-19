@@ -25,6 +25,9 @@ public class WalkToIntimateMoment : MonoBehaviour
     private GameObject player;
     public GameObject creepInCorner;    
     public GameObject[] influencedStoryActors;
+    public GameObject beerCrateObstacle;
+    public GameObject CheckpointSound;
+    public AudioClip checkpointSound;
     public void Start() {
         animator = GetComponent<Animator>();
         nav = GetComponent<NavMeshAgent>();
@@ -55,7 +58,7 @@ public class WalkToIntimateMoment : MonoBehaviour
         music.loop = true;
 
         // QTE relationship possible while music is playing
-        DialogueCanvasQTE.SetActive(true);
+        Invoke("EndCutscene", 7.0f);
     }
 
     public void EnactPerformance() {
@@ -118,19 +121,22 @@ public class WalkToIntimateMoment : MonoBehaviour
                     influencedStoryActors[i].GetComponentInChildren<DialogueNode>().activeDialogueNode = 1;
                 }
             }
+            // Update storystate
+            CheckpointSound.GetComponent<AudioSource>().PlayOneShot(checkpointSound);
+            StoryState.SnowCutscene = true;
+            Destroy(beerCrateObstacle.gameObject);
+            initializer.GetComponent<AudioSource>().Play();
+            initializer.GetComponent<AudioSource>().loop = true;
+            initializer.GetComponent<AudioSource>().volume = 100;
         } else if(startedCutscene && !QTE_Ended) {
             // Handle QTE via mouse buttons
 
         }
     }
-    public void YouNeedToMoveOn() {
-        
+
+    public void EndCutscene() {
+        QTE_Ended = true;
     }
-
-    public void KillHimWithGun() {
-
-    }
-
     public void HandleQTE() {
         QTE_Step_1_Ended = true;
         QTE_Ended = true;

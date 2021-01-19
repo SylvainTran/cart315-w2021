@@ -23,6 +23,8 @@ public class PlayerController : MonoBehaviour
     public GameObject FriendsTableCam;
     public GameObject BartenderCam;
     public GameObject CreepCornerCam;
+    public GameObject DarrylTableCam;
+    public GameObject NeganTableCam;
     public GameObject OutsideBarAreaCam;
     public GameObject EdgeOfCreationCam;
     public GameObject DialogueCanvas;
@@ -31,6 +33,7 @@ public class PlayerController : MonoBehaviour
     public string jsonPath;
     public bool cutSceneEnded = false;
     public AudioClip gibberish;
+    public GameObject interactingWith;
 
     [Serializable]
     public class DialogueNodes
@@ -56,6 +59,10 @@ public class PlayerController : MonoBehaviour
         audio = gameObject.GetComponent<AudioSource>();
         DialogueCanvas = GameObject.FindGameObjectWithTag("DialogueCanvas");
         DialogueCanvasTextUI = DialogueCanvas.gameObject.transform.Find("DialogueCanvasTextUI");
+        // Play audio
+        if(!audio.isPlaying) {
+            audio.PlayDelayed(0.3f);
+        }
     }
 
     void SwitchVirtualCameras(GameObject oldCam, GameObject newCam) {
@@ -81,6 +88,18 @@ public class PlayerController : MonoBehaviour
             SwitchVirtualCameras(BarOverviewCam, CreepCornerCam);            
             StartDialogue(other.gameObject);
         }
+        else if (other.gameObject.CompareTag("DarrylTable")) {
+            if(StoryState.HelpedBarman) {
+               SwitchVirtualCameras(BarOverviewCam, DarrylTableCam);            
+            }
+            StartDialogue(other.gameObject);
+        }
+        else if (other.gameObject.CompareTag("NeganTable")) {
+         if(StoryState.HelpedBarman) {
+            SwitchVirtualCameras(BarOverviewCam, NeganTableCam);            
+         }          
+            StartDialogue(other.gameObject);
+        }        
         else if (other.gameObject.CompareTag("OutsideBarAreaCam")) {
             SwitchVirtualCameras(BarOverviewCam, OutsideBarAreaCam);            
         }
@@ -97,6 +116,8 @@ public class PlayerController : MonoBehaviour
 
     private void StartDialogue(GameObject other)
     {
+        // Update public interactingWith variable for the dialogue manager
+        interactingWith = other;
         string[] dialogues = other.GetComponent<DialogueNode>().text;
         int len = dialogues.Length;
         string text = other.GetComponent<DialogueNode>().speakers[0] + ": ";
@@ -107,15 +128,17 @@ public class PlayerController : MonoBehaviour
         text += dialogues[other.GetComponent<DialogueNode>().activeDialogueNode];
         DialogueCanvasTextUI.gameObject.GetComponent<TextMeshProUGUI>().SetText(text);
         // Play gibberish sound
-        if(!other.gameObject.GetComponent<AudioSource>().isPlaying) {
-            other.gameObject.GetComponent<AudioSource>().PlayOneShot(gibberish, 0.9f);
-        }
+        // if(!other.gameObject.GetComponent<AudioSource>().isPlaying) {
+        //     other.gameObject.GetComponent<AudioSource>().PlayOneShot(gibberish, 0.9f);
+        // }
     }
 
     void OnTriggerExit(Collider other) {
         // Clear last dialogue
         DialogueCanvasTextUI.gameObject.GetComponent<TextMeshProUGUI>().SetText("");
         if(other.gameObject.CompareTag("FriendsTable")) {
+            // Reset dialogue state
+            other.GetComponent<DialogueNode>().activeDialogueNode = 0;
             SwitchVirtualCameras(FriendsTableCam, BarOverviewCam);              
         }   
         else if(other.gameObject.CompareTag("BartenderCam")) {
@@ -124,6 +147,12 @@ public class PlayerController : MonoBehaviour
         else if (other.gameObject.CompareTag("CreepCorner")) {
             SwitchVirtualCameras(CreepCornerCam, BarOverviewCam);              
         }
+        else if (other.gameObject.CompareTag("DarrylTable")) {
+            SwitchVirtualCameras(DarrylTableCam, BarOverviewCam);            
+        }
+        else if (other.gameObject.CompareTag("NeganTable")) {
+            SwitchVirtualCameras(NeganTableCam, BarOverviewCam);            
+        }              
         else if (other.gameObject.CompareTag("OutsideBarAreaCam")) {
             SwitchVirtualCameras(OutsideBarAreaCam, BarOverviewCam);              
         }        
@@ -148,10 +177,6 @@ public class PlayerController : MonoBehaviour
             transform.rotation = Quaternion.Euler(0f, targetAngle, 0f);
             Vector3 moveDirection = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
             transform.Translate(moveDirection.normalized * speed * Time.deltaTime, Space.World);
-            // Play audio
-            if(!audio.isPlaying) {
-                audio.PlayDelayed(0.3f);
-            }
         }
         // Animate
         animator.SetBool("isWalking", true);

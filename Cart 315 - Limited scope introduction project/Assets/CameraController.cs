@@ -29,7 +29,7 @@ public class CameraController : MonoBehaviour
     }
 
     void FadeScreen() {
-        introScreen.GetComponentInChildren<Image>().CrossFadeAlpha(0, 21.0f, false);
+        introScreen.GetComponentInChildren<Image>().CrossFadeAlpha(0, 18.0f, false);
     }
 
     void TerminateFadeScreen() {

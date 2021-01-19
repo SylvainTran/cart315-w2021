@@ -43,8 +43,10 @@
      <Compile Include="Assets\CameraController.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Rotate.cs" />
-     <Compile Include="Assets\DialogueNode.cs" />
      <Compile Include="Assets\StoryState.cs" />
+     <Compile Include="Assets\DialogueNode.cs" />
+     <Compile Include="Assets\BeerCrate.cs" />
+     <Compile Include="Assets\BarmanJobHandler.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
