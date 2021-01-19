@@ -3,7 +3,15 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - FriendsTable
+  - BartenderCam
+  - DialogueCanvas
+  - CreepCorner
+  - EdgeOfCreation
+  - OutsideBarAreaCam
+  - Initializer
+  - QTE
   layers:
   - Default
   - TransparentFX

@@ -1,0 +1,6 @@
+{
+    "root": [
+        {"area": "FriendsTable", "node": 1, "text": "I miss my friends.", "speaker": "Joe"}, {"node": 2, "text": "I lost my job yesterday. That makes me wonder about the future.", "speaker": "Bertrand"},
+        {"area": "BartenderArea", "node": 1, "text": "Never think you're alone. We're all the same inside.", "speaker": "Bartender Marley"}
+    ]
+}
