@@ -9,10 +9,10 @@ public sealed class Main : MonoBehaviour
     public int activeBeerPlantsCount = 0;
 
     void Start() {
-        // if(!GetComponent<AudioSource>().isPlaying) {
-        //     GetComponent<AudioSource>().Play();
-        //     GetComponent<AudioSource>().loop = true;
-        // }
+        if(!GetComponent<AudioSource>().isPlaying) {
+            GetComponent<AudioSource>().Play();
+            GetComponent<AudioSource>().loop = true;
+        }
     }
 
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]

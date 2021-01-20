@@ -10518,7 +10518,7 @@ MonoBehaviour:
   jsonFile: {fileID: 4900000, guid: 035951f63c9ec21489064987b533c13a, type: 3}
   jsonPath: /Dialogue/dialogue.json
   cutSceneEnded: 0
-  gibberish: {fileID: 8300000, guid: df5a88ea7ec39134b8b833fdfa3f54fb, type: 3}
+  gibberish: {fileID: 8300000, guid: 45e955bd35fba5649bec954006732b4b, type: 3}
   interactingWith: {fileID: 0}
 --- !u!65 &919142258
 BoxCollider:
@@ -10548,11 +10548,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: d5db5f6982bf793488592ea5e2406cec, type: 3}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: 10b350ec9bd12754998d027d1f758e22, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -16671,6 +16671,10 @@ PrefabInstance:
       propertyPath: influencedStoryActors.Array.data[1]
       value: 
       objectReference: {fileID: 1872225375}
+    - target: {fileID: 1496106271, guid: 8500dfc3035404c4dbebe47bf15cf28a, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 1417155a47ca2004f87592dcfb8e8b24, type: 3}
     - target: {fileID: 3534675931178055328, guid: 8500dfc3035404c4dbebe47bf15cf28a, type: 3}
       propertyPath: m_RootOrder
       value: 5

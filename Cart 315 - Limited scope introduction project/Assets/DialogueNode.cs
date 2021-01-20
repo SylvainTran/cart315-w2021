@@ -26,17 +26,17 @@ public class DialogueNode : MonoBehaviour
             Ray ray = Camera.main.ScreenPointToRay(pos);
             Physics.Raycast(ray.origin, ray.direction * 10, out hit, Mathf.Infinity);
             if(hit.collider != null) {
-                Debug.DrawLine(ray.origin, hit.point);
-                Debug.Log("Clicked on screen or pushed a button.");
-                Debug.Log(hit.collider.gameObject.name);
+                // Debug.DrawLine(ray.origin, hit.point);
+                // Debug.Log("Clicked on screen or pushed a button.");
+                // Debug.Log(hit.collider.gameObject.name);
             }
         }
         UpdateDialogueNode();
     }
 
     public void UpdateDialogueNode() {
-        Debug.Log("StoryState Took beer crate: " + StoryState.TookBeerCrate);
-        Debug.Log("StoryState Helped barman: " + StoryState.HelpedBarman);
+        // Debug.Log("StoryState Took beer crate: " + StoryState.TookBeerCrate);
+        // Debug.Log("StoryState Helped barman: " + StoryState.HelpedBarman);
         if(StoryState.TookBeerCrate && StoryState.HelpedBarman) {
             text = text2;
         }

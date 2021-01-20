@@ -160,8 +160,7 @@ public class PlayerController : MonoBehaviour
             SwitchVirtualCameras(EdgeOfCreationCam, BarOverviewCam);                          
         }        
     }
-
-    // Update is called once per frame
+    
     void Update()
     {
         float horizontalInput = Input.GetAxisRaw("Horizontal");
