@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{5409B46F-B835-0BB4-BECE-ED8EC295C9CE}</ProjectGuid>
+    <ProjectGuid>{B0D4A0C8-9437-9174-D470-7025B51B6B74}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>ScivoloCharacterController</AssemblyName>
@@ -56,22 +56,22 @@
     <Analyzer Include="/Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/AddIns/MonoDevelop.Unity/Analyzers/Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets/Mente Bacata/Scivolo Character Controller/Scripts/CharacterCapsule.cs" />
-    <Compile Include="Assets/Mente Bacata/Scivolo Character Controller/Scripts/GroundInfo.cs" />
-    <Compile Include="Assets/Mente Bacata/Scivolo Character Controller/Scripts/Internal/GameObjectExtensions.cs" />
-    <Compile Include="Assets/Mente Bacata/Scivolo Character Controller/Scripts/Internal/DisplacementOfBestFitCalculator.cs" />
-    <Compile Include="Assets/Mente Bacata/Scivolo Character Controller/Scripts/CharacterMover.cs" />
-    <Compile Include="Assets/Mente Bacata/Scivolo Character Controller/Scripts/Internal/MovementProjector.cs" />
     <Compile Include="Assets/Mente Bacata/Scivolo Character Controller/Scripts/Internal/CapsuleSweepTestWithBuffer.cs" />
-    <Compile Include="Assets/Mente Bacata/Scivolo Character Controller/Scripts/GroundDetector.cs" />
-    <Compile Include="Assets/Mente Bacata/Scivolo Character Controller/Scripts/Internal/Vector3Extensions.cs" />
-    <Compile Include="Assets/Mente Bacata/Scivolo Character Controller/Scripts/Internal/FloorAbovePointChecker.cs" />
-    <Compile Include="Assets/Mente Bacata/Scivolo Character Controller/Scripts/Internal/MovementSurface.cs" />
-    <Compile Include="Assets/Mente Bacata/Scivolo Character Controller/Scripts/MoveContact.cs" />
-    <Compile Include="Assets/Mente Bacata/Scivolo Character Controller/Scripts/Internal/OverlapChecker.cs" />
     <Compile Include="Assets/Mente Bacata/Scivolo Character Controller/Scripts/Internal/OverlapResolver.cs" />
     <Compile Include="Assets/Mente Bacata/Scivolo Character Controller/Scripts/Internal/Math.cs" />
+    <Compile Include="Assets/Mente Bacata/Scivolo Character Controller/Scripts/GroundInfo.cs" />
     <Compile Include="Assets/Mente Bacata/Scivolo Character Controller/Scripts/Internal/GizmosUtility.cs" />
+    <Compile Include="Assets/Mente Bacata/Scivolo Character Controller/Scripts/Internal/OverlapChecker.cs" />
+    <Compile Include="Assets/Mente Bacata/Scivolo Character Controller/Scripts/CharacterMover.cs" />
+    <Compile Include="Assets/Mente Bacata/Scivolo Character Controller/Scripts/Internal/DisplacementOfBestFitCalculator.cs" />
+    <Compile Include="Assets/Mente Bacata/Scivolo Character Controller/Scripts/Internal/MovementSurface.cs" />
+    <Compile Include="Assets/Mente Bacata/Scivolo Character Controller/Scripts/CharacterCapsule.cs" />
+    <Compile Include="Assets/Mente Bacata/Scivolo Character Controller/Scripts/Internal/Vector3Extensions.cs" />
+    <Compile Include="Assets/Mente Bacata/Scivolo Character Controller/Scripts/Internal/FloorAbovePointChecker.cs" />
+    <Compile Include="Assets/Mente Bacata/Scivolo Character Controller/Scripts/GroundDetector.cs" />
+    <Compile Include="Assets/Mente Bacata/Scivolo Character Controller/Scripts/Internal/GameObjectExtensions.cs" />
+    <Compile Include="Assets/Mente Bacata/Scivolo Character Controller/Scripts/Internal/MovementProjector.cs" />
+    <Compile Include="Assets/Mente Bacata/Scivolo Character Controller/Scripts/MoveContact.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets/Mente Bacata/Scivolo Character Controller/Scripts/ScivoloCharacterController.asmdef" />

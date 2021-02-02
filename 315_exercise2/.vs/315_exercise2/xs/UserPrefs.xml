@@ -1,0 +1,26 @@
+﻿<Properties StartupConfiguration="{238CBF73-7223-1942-63E1-1AB7A13F3D5B}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/HandleForce.cs">
+    <Files>
+      <File FileName="Assets/Rotator.cs" />
+      <File FileName="Assets/HandleForce.cs" Line="21" Column="33" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="315_exercise2" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="HandleForce.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="55ccf416-3f8b-4bdd-a45a-788dd8189a11" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

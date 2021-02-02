@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{35ED8663-D980-B641-0313-9AECC861B0E3}</ProjectGuid>
+    <ProjectGuid>{238CBF73-7223-1942-63E1-1AB7A13F3D5B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -56,12 +56,14 @@
     <Analyzer Include="/Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/AddIns/MonoDevelop.Unity/Analyzers/Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets/OrbitMouse.cs" />
-    <Compile Include="Assets/Mente Bacata/Scivolo Character Controller/Demo/Scripts/PhysicsSimulationUpdater.cs" />
-    <Compile Include="Assets/Mente Bacata/Scivolo Character Controller/Demo/Scripts/SimpleCharacterController.cs" />
-    <Compile Include="Assets/Mente Bacata/Scivolo Character Controller/Demo/Scripts/OrbitingCamera.cs" />
     <Compile Include="Assets/Mente Bacata/Scivolo Character Controller/Demo/Scripts/MovingPlatform.cs" />
+    <Compile Include="Assets/Mente Bacata/Scivolo Character Controller/Demo/Scripts/SimpleCharacterController.cs" />
+    <Compile Include="Assets/Scripts/Rotator.cs" />
+    <Compile Include="Assets/Mente Bacata/Scivolo Character Controller/Demo/Scripts/OrbitingCamera.cs" />
+    <Compile Include="Assets/Scripts/HandleForce.cs" />
     <Compile Include="Assets/Mente Bacata/Scivolo Character Controller/Demo/Scripts/LevelRotator.cs" />
+    <Compile Include="Assets/Mente Bacata/Scivolo Character Controller/Demo/Scripts/PhysicsSimulationUpdater.cs" />
+    <Compile Include="Assets/Scripts/OrbitMouse.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -664,7 +666,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="ScivoloCharacterController.csproj">
-      <Project>{5409B46F-B835-0BB4-BECE-ED8EC295C9CE}</Project>
+      <Project>{B0D4A0C8-9437-9174-D470-7025B51B6B74}</Project>
       <Name>ScivoloCharacterController</Name>
     </ProjectReference>
   </ItemGroup>

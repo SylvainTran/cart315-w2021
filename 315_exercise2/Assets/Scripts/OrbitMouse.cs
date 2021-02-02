@@ -11,10 +11,13 @@ public class OrbitMouse : MonoBehaviour
     public float yaw;
     public float roll;
     public float distToSculpture = 50f;
+    public float rotationSpeed = 5.0f;
+    public float sensitivity = 0.01f;
+    public bool inversed = false;
 
     public void Start()
     {
-        currentEulerRotation = new Vector3(11.208f, -43.452f, -0.001f);
+        currentEulerRotation = new Vector3(18.49896f, 16.52547f, -22.32906f); // Initial rotation settings
     }
 
     public void RecordOriginalPos()
@@ -33,14 +36,14 @@ public class OrbitMouse : MonoBehaviour
         {
             // Calculate dir vector
             Vector3 moveDir = Input.mousePosition - onDragBeginMousePox;
-            moveDir *= 0.01f; // Sensitivity
+            moveDir *= sensitivity; // Sensitivity
             moveDir.Normalize();
             // Set pitch/roll/yaw values
             pitch = moveDir.y;
             yaw = moveDir.x;
             roll = moveDir.z;
             // Clamp
-            if (pitch > 89f) pitch = 89f;
+            if (pitch > 68f) pitch = 89f;
             if (pitch < -89f) pitch = -89f;
             while (yaw < -180f) yaw += 360f;
             while (yaw > 180f) yaw -= 360f;
@@ -48,6 +51,8 @@ public class OrbitMouse : MonoBehaviour
             Vector3 result = new Vector3(Mathf.Cos(yaw) * Mathf.Cos(pitch), Mathf.Sin(pitch), Mathf.Sin(yaw) * Mathf.Cos(pitch));
             Camera.main.transform.position = sculpture.transform.position - result * distToSculpture;
             Camera.main.transform.LookAt(sculpture.transform);
+
+            // TODO change to arcball
         }
     }
 }
