@@ -1,0 +1,143 @@
+Using pre-set license
+
+ COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/2020.2.0f1/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+/Users/sylvaintran/Documents/GitHub/cart315-w2021/Cart 315 - Limited scope introduction project
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+50542
+Successfully changed project path to: /Users/sylvaintran/Documents/GitHub/cart315-w2021/Cart 315 - Limited scope introduction project
+/Users/sylvaintran/Documents/GitHub/cart315-w2021/Cart 315 - Limited scope introduction project
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 26.82 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.2.0f1 (3721df5a8b28)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2020.2.0f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/sylvaintran/Documents/GitHub/cart315-w2021/Cart 315 - Limited scope introduction project/Assets
+GfxDevice: creating device client; threaded=0
+2021-01-27 11:41:16.060 Unity[1795:78894] (null) preferred device: Apple M1 (high power)
+2021-01-27 11:41:16.060 Unity[1795:78894] Metal devices available: 1
+2021-01-27 11:41:16.060 Unity[1795:78894] 0: Apple M1 (high power)
+2021-01-27 11:41:16.060 Unity[1795:78894] Using device Apple M1 (high power)
+Initializing Metal device caps: Apple M1
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/2020.2.0f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2020.2.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = '/Applications/Unity/Hub/Editor/2020.2.0f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56795
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/2020.2.0f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Registered in 0.001035 seconds.
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 26.23 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.010 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.001660 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.23 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.365 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launching external process: /Applications/Unity/Hub/Editor/2020.2.0f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.26 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1647 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 152.2 MB.
+System memory in use after: 152.3 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2089.
+Total: 1.593833 ms (FindLiveObjects: 0.154125 ms CreateObjectMapping: 0.035708 ms MarkObjects: 1.332084 ms  DeleteObjects: 0.071250 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Rotate.cs
+  artifactKey: Guid(ee69a39844948764798787153aa53bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rotate.cs using Guid(ee69a39844948764798787153aa53bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76943ba9b9df030c5655c19d0d86b8b3') in 0.291358 seconds
+  Import took 0.294123 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/CameraController.cs
+  artifactKey: Guid(5ccb9a7ac6d83c24cadb841b4940147a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CameraController.cs using Guid(5ccb9a7ac6d83c24cadb841b4940147a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cbb375ec44aca7853db0cfe5fcb62d5') in 0.001684 seconds
+  Import took 0.004023 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.528912 seconds.
+  path: Assets/DialogueNode.cs
+  artifactKey: Guid(c54dfffdc24d23e4b8973d614f1da445) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DialogueNode.cs using Guid(c54dfffdc24d23e4b8973d614f1da445) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '425b52a1db638dbe5012284bd864970a') in 0.001282 seconds
+  Import took 0.004741 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003580 seconds.
+  path: Assets/DialogueNode.cs
+  artifactKey: Guid(c54dfffdc24d23e4b8973d614f1da445) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DialogueNode.cs using Guid(c54dfffdc24d23e4b8973d614f1da445) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '425b52a1db638dbe5012284bd864970a') in 0.006538 seconds
+  Import took 0.010170 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1173.316035 seconds.
+  path: Assets/Resources/DialogueCanvas.prefab
+  artifactKey: Guid(9a04b2c44db164d39bfb2930663000c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/DialogueCanvas.prefab using Guid(9a04b2c44db164d39bfb2930663000c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7e2bb8e92692574c8794f8ccf07c216') in 0.652463 seconds
+  Import took 0.661049 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000271 seconds.
+  path: Assets/Resources/Initializer.prefab
+  artifactKey: Guid(184bb6895127843da897bf2dd9f16f2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Initializer.prefab using Guid(184bb6895127843da897bf2dd9f16f2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4752969707889c9f138b9da495269ff9') in 0.005820 seconds
+  Import took 0.008312 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000236 seconds.
+  path: Assets/Resources/PanelClickHandler.prefab
+  artifactKey: Guid(ab0d3729f33e3054aaca21d5f54dfc8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/PanelClickHandler.prefab using Guid(ab0d3729f33e3054aaca21d5f54dfc8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8463310a18aba97ba6ae8437a362ad22') in 0.003601 seconds
+  Import took 0.007266 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000342 seconds.
+  path: Assets/Resources/QTE.prefab
+  artifactKey: Guid(b81c79c5df371e542bb9e4512571a691) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/QTE.prefab using Guid(b81c79c5df371e542bb9e4512571a691) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f7833fa23e241e1179f4e44ee255055') in 0.027671 seconds
+  Import took 0.030542 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000349 seconds.
+  path: Assets/Resources/IntroScreen.prefab
+  artifactKey: Guid(f44b6ce8f8c9ac248b79d3c4ccdaa911) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/IntroScreen.prefab using Guid(f44b6ce8f8c9ac248b79d3c4ccdaa911) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8c49c1e7a68a0be67633f6b4f86d155') in 0.008222 seconds
+  Import took 0.010703 seconds .
+
