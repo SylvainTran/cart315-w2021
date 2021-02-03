@@ -10,6 +10,9 @@ TagManager:
   - ForceObject
   - Ground
   - Commentary
+  - MarsBox2
+  - MarsBox1
+  - MarsBox
   layers:
   - Default
   - TransparentFX

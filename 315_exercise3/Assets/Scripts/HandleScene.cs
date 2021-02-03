@@ -15,7 +15,13 @@ public class HandleScene : MonoBehaviour
             SceneManager.LoadScene("FreeFormWonderland");
         } else if(SceneManager.GetActiveScene().name == "FreeFormWonderland")
         {
-            SceneManager.LoadScene("Preface");
+            SceneManager.LoadScene("FreeFormWonderlandCollision");
+        } else if (SceneManager.GetActiveScene().name == "FreeFormWonderlandCollision")
+        {
+            SceneManager.LoadScene("FreeFormWonderLandCollision2");
+        } else if (SceneManager.GetActiveScene().name == "FreeFormWonderLandCollision2")
+        {
+            SceneManager.LoadScene("FreeFormWonderLandRaycastBuildOnPoint");
         }
     }
 

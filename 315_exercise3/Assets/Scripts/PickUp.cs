@@ -5,11 +5,11 @@ using UnityEngine;
 public class PickUp : MonoBehaviour
 {
     public string pickUpTag = "PickUpItem";
+    public string forceTag = "Force";
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag(pickUpTag))
         {
-            Debug.Log("Picking up gem.");
             Destroy(collision.gameObject);
         }
     }

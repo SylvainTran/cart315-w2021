@@ -46,7 +46,7 @@ namespace MenteBacata.ScivoloCharacterControllerDemo
             cameraTransform = Camera.main.transform;
         }
 
-        private void Update()
+        private void FixedUpdate()
         {
             float horizontalInput = Input.GetAxis("Horizontal");
             float verticalInput = Input.GetAxis("Vertical");
@@ -102,7 +102,8 @@ namespace MenteBacata.ScivoloCharacterControllerDemo
 
                 velocity += verticalSpeed * transform.up;
             }
-
+            // Clamp z-axis for 2D movement effect
+            velocity.z = Mathf.Clamp(velocity.z, 0.0f, 0.0f);
             RotateTowards(velocity);
             mover.Move(velocity * deltaTime, moveContacts);
 

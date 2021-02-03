@@ -14,4 +14,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FreeFormWonderland.unity
     guid: 67f5e8c8bf30449bcb96a1657819a875
+  - enabled: 1
+    path: Assets/Scenes/FreeFormWonderlandCollision.unity
+    guid: 427864c6dfc0946afbb6f8f8940988e5
+  - enabled: 1
+    path: Assets/Scenes/FreeFormWonderlandCollision2.unity
+    guid: 6f045059f2a0946d6a1f201800d20d66
+  - enabled: 1
+    path: Assets/Scenes/FreeFormWonderlandRaycastBuildOnPoint.unity
+    guid: f5206c23ac2844ae6ba6404e580ccfaa
   m_configObjects: {}
