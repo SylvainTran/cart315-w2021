@@ -179,8 +179,12 @@ MonoBehaviour:
   player: {fileID: 1503144264}
   collisionForce: {x: 400, y: 0, z: 0}
   commentary: {fileID: 666090063}
+  marsBox0: {fileID: 0}
   marsBox1: {fileID: 191921623}
   marsBox2: {fileID: 2016488814}
+  switch0: 0
+  switch1: 0
+  switch2: 0
   contactThreshold: 0.05
 --- !u!50 &102761375
 Rigidbody2D:
@@ -262,9 +266,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 10.66, z: 0}
   m_LocalScale: {x: 3.4, y: 3.51, z: 3.4}
-  m_Children: []
+  m_Children:
+  - {fileID: 1150225005}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &102761379
 CircleCollider2D:
@@ -410,8 +415,12 @@ MonoBehaviour:
   player: {fileID: 1503144264}
   collisionForce: {x: 0, y: 0, z: 0}
   commentary: {fileID: 666090063}
+  marsBox0: {fileID: 317437659}
   marsBox1: {fileID: 191921623}
   marsBox2: {fileID: 2016488814}
+  switch0: 0
+  switch1: 0
+  switch2: 0
   contactThreshold: 0.99
 --- !u!1 &317437659
 GameObject:
@@ -524,7 +533,7 @@ Transform:
   m_LocalScale: {x: 1.6159337, y: 1.6159337, z: 1.6159337}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &317437665
 MonoBehaviour:
@@ -541,8 +550,12 @@ MonoBehaviour:
   player: {fileID: 1503144264}
   collisionForce: {x: 0, y: 0, z: 0}
   commentary: {fileID: 666090063}
+  marsBox0: {fileID: 317437659}
   marsBox1: {fileID: 191921623}
   marsBox2: {fileID: 2016488814}
+  switch0: 0
+  switch1: 0
+  switch2: 0
   contactThreshold: 0.99
 --- !u!1001 &373638621
 PrefabInstance:
@@ -862,6 +875,53 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &1150225004
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1150225005}
+  - component: {fileID: 1150225006}
+  m_Layer: 0
+  m_Name: JointColumn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1150225005
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1150225004}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.008, y: -0.02, z: -0.02}
+  m_LocalScale: {x: 0.29411763, y: 0.28490028, z: 0.29411763}
+  m_Children: []
+  m_Father: {fileID: 102761378}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &1150225006
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1150225004}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1503144264 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2573877700867721438, guid: a84e11ee423eace4aac65d32b52ee82f, type: 3}
@@ -927,7 +987,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1504676316850386099, guid: b725808fb9b784f7181391f6662088fe, type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 1504676316850386099, guid: b725808fb9b784f7181391f6662088fe, type: 3}
       propertyPath: m_AnchorMax.x
@@ -963,7 +1023,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1504676316850386099, guid: b725808fb9b784f7181391f6662088fe, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3.9342
+      value: -6.69
       objectReference: {fileID: 0}
     - target: {fileID: 1504676316850386099, guid: b725808fb9b784f7181391f6662088fe, type: 3}
       propertyPath: m_LocalRotation.w
@@ -983,7 +1043,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1504676316850386099, guid: b725808fb9b784f7181391f6662088fe, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -14.29
+      value: -17.06
       objectReference: {fileID: 0}
     - target: {fileID: 1504676316850386099, guid: b725808fb9b784f7181391f6662088fe, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -1147,8 +1207,12 @@ MonoBehaviour:
   player: {fileID: 1503144264}
   collisionForce: {x: 0, y: 0, z: 0}
   commentary: {fileID: 666090063}
+  marsBox0: {fileID: 317437659}
   marsBox1: {fileID: 191921623}
   marsBox2: {fileID: 2016488814}
+  switch0: 0
+  switch1: 0
+  switch2: 0
   contactThreshold: 0.99
 --- !u!4 &2032797351 stripped
 Transform:

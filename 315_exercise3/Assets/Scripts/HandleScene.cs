@@ -5,9 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class HandleScene : MonoBehaviour
 {
-    public void ChangeScene() {
+    public static IEnumerator StartChangeScene(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        ChangeScene();
+    }
+    // Static method for ease
+    public static void ChangeScene() {
+        Debug.Log("INSIDE STATIC CHANGING SCENE");
         // There is a bug with unity's scenemanagement methods related to using build index (int)
-        if(SceneManager.GetActiveScene().name == "Preface")
+        if (SceneManager.GetActiveScene().name == "Preface")
         {
             SceneManager.LoadScene("HorizontalWonderland");
         } else if(SceneManager.GetActiveScene().name == "HorizontalWonderland")
@@ -21,7 +28,8 @@ public class HandleScene : MonoBehaviour
             SceneManager.LoadScene("FreeFormWonderLandCollision2");
         } else if (SceneManager.GetActiveScene().name == "FreeFormWonderLandCollision2")
         {
-            SceneManager.LoadScene("FreeFormWonderLandRaycastBuildOnPoint");
+            Debug.Log("Changing to second to final scene");
+            SceneManager.LoadScene("FreeFormWonderlandRaycastBuildOnPoint");
         }
     }
 

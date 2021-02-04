@@ -24,6 +24,11 @@ public class BuildAtPoint : MonoBehaviour
                         // Scroll down commentary object
                         commentary.gameObject.transform.position += new Vector3(0f, 2f, 0f);
                     }
+                    // wrap commentary if out of screen
+                    if (commentary.gameObject.transform.position.y >= 56.0f)
+                    {
+                        commentary.gameObject.transform.position = new Vector3(-1.6f, 0.0f, -3.1f);
+                    }
                 }
                 delay = 0;
             }

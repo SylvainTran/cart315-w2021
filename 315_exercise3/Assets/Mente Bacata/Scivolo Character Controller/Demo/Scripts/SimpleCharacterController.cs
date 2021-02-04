@@ -1,4 +1,4 @@
-﻿//#define MB_DEBUG
+//#define MB_DEBUG
 
 using MenteBacata.ScivoloCharacterController;
 using System.Collections.Generic;
@@ -46,7 +46,7 @@ namespace MenteBacata.ScivoloCharacterControllerDemo
             cameraTransform = Camera.main.transform;
         }
 
-        private void FixedUpdate()
+        private void Update()
         {
             float horizontalInput = Input.GetAxis("Horizontal");
             float verticalInput = Input.GetAxis("Vertical");
