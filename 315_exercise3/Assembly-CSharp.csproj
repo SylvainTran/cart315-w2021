@@ -67,8 +67,8 @@
     <Compile Include="Assets\Scripts\HandleForce.cs" />
     <Compile Include="Assets\Mente Bacata\Scivolo Character Controller\Demo\Scripts\LevelRotator.cs" />
     <Compile Include="Assets\Scripts\MovementAxisConstraints.cs" />
-    <Compile Include="Assets\Scripts\HandleLieTruth.cs" />
     <Compile Include="Assets\Scripts\Spawner.cs" />
+    <Compile Include="Assets\Scripts\HandleLieTruth.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

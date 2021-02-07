@@ -1,0 +1,31 @@
+﻿<Properties StartupConfiguration="{238CBF73-7223-1942-63E1-1AB7A13F3D5B}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/HandleScene.cs">
+    <Files>
+      <File FileName="Assets/Rotator.cs" />
+      <File FileName="Assets/HandleForce.cs" Line="24" Column="33" />
+      <File FileName="Assets/Scripts/HandleForce.cs" Line="22" Column="6" />
+      <File FileName="Assets/Scripts/OptOut.cs" Line="7" Column="1" />
+      <File FileName="Assets/HandleLieTruth.cs" Line="18" Column="109" />
+      <File FileName="Assets/HandleScene.cs" Line="9" Column="98" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="315_exercise2" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True" />
+              <Node name="HandleScene.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="55ccf416-3f8b-4bdd-a45a-788dd8189a11" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
