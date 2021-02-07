@@ -14,16 +14,15 @@ public sealed class Main : MonoBehaviour
     {
         GameObject main = GameObject.Instantiate(Resources.Load("Initializer")) as GameObject;
         GameObject.DontDestroyOnLoad(main);
-    }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        // Play cinematic?
+
+        // Load game rules?
+
+        // Load => Impostors
+
+        // Load => Innocents
+
+        // Load => Helpers
     }
 }

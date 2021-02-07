@@ -7,7 +7,6 @@ public class HandleForce : MonoBehaviour
     public Vector3 relForce;
     private Vector3 originPos;
     private Quaternion originRot;
-    private float threshold;
     public float latitude;
     public float longitude;
     public float twist = -500f;
@@ -16,7 +15,6 @@ public class HandleForce : MonoBehaviour
         originPos = this.transform.position;
         originRot = this.transform.rotation;
         relForce = new Vector3(latitude, twist, longitude);
-        threshold = 250.0f;
     }
     private void OnMouseDown()
     {

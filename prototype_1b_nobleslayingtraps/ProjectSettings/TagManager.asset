@@ -4,15 +4,9 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - RotatingComponent
-  - SpringJointColumn
   - PickUpItem
-  - ForceObject
   - Ground
-  - Commentary
-  - MarsBox2
-  - MarsBox1
-  - MarsBox
+  - Monster
   layers:
   - Default
   - TransparentFX

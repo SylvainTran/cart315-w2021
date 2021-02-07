@@ -53,26 +53,40 @@
     <UnityVersion>2020.2.1f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\SampleScenes\Scripts\ParticleSceneControls.cs" />
+    <Compile Include="Assets\Scripts\PlaceTrap.cs" />
+    <Compile Include="Assets\Scripts\ChasePlayer.cs" />
     <Compile Include="Assets\Mente Bacata\Scivolo Character Controller\Demo\Scripts\SimpleCharacterController.cs" />
     <Compile Include="Assets\Scripts\Rotator.cs" />
     <Compile Include="Assets\Mente Bacata\Scivolo Character Controller\Demo\Scripts\OrbitingCamera.cs" />
+    <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
+    <Compile Include="Assets\SampleScenes\Scripts\LevelReset.cs" />
     <Compile Include="Assets\Scripts\BuildAtPoint.cs" />
     <Compile Include="Assets\Scripts\PickUp.cs" />
     <Compile Include="Assets\Mente Bacata\Scivolo Character Controller\Demo\Scripts\PhysicsSimulationUpdater.cs" />
     <Compile Include="Assets\Scripts\OrbitMouse.cs" />
+    <Compile Include="Assets\Scripts\World.cs" />
     <Compile Include="Assets\Mente Bacata\Scivolo Character Controller\Demo\Scripts\MovingPlatform.cs" />
+    <Compile Include="Assets\Scripts\Explode.cs" />
+    <Compile Include="Assets\SampleScenes\Scripts\CameraSwitch.cs" />
     <Compile Include="Assets\Scripts\ballCollision.cs" />
+    <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
     <Compile Include="Assets\Scripts\HandleForce.cs" />
     <Compile Include="Assets\Mente Bacata\Scivolo Character Controller\Demo\Scripts\LevelRotator.cs" />
+    <Compile Include="Assets\Scripts\MonsterAI.cs" />
     <Compile Include="Assets\Scripts\Spawner.cs" />
+    <Compile Include="Assets\Scripts\SceneController.cs" />
     <Compile Include="Assets\Scripts\HandleLieTruth.cs" />
-    <Compile Include="Assets\Main.cs" />
-    <Compile Include="Assets\SampleScenes\Scripts\ParticleSceneControls.cs" />
-    <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
-    <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
-    <Compile Include="Assets\SampleScenes\Scripts\LevelReset.cs" />
-    <Compile Include="Assets\SampleScenes\Scripts\CameraSwitch.cs" />
-    <Compile Include="Assets\SceneController.cs" />
+    <Compile Include="Assets\Scripts\Drive.cs" />
+    <Compile Include="Assets\Scripts\Main.cs" />
+    <Compile Include="Assets\Scripts\Combatant.cs" />
+    <Compile Include="Assets\Scripts\TrapLifespan.cs" />
+    <Compile Include="Assets\LevelController.cs" />
+    <Compile Include="Assets\MonsterSpawner.cs" />
+    <Compile Include="Assets\RespawnPlayer.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
