@@ -64,8 +64,10 @@
     <Compile Include="Assets\Mente Bacata\Scivolo Character Controller\Demo\Scripts\OrbitingCamera.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\LevelReset.cs" />
+    <Compile Include="Assets\LevelController.cs" />
     <Compile Include="Assets\Scripts\BuildAtPoint.cs" />
     <Compile Include="Assets\Scripts\PickUp.cs" />
+    <Compile Include="Assets\Scripts\TrapLifespan.cs" />
     <Compile Include="Assets\Mente Bacata\Scivolo Character Controller\Demo\Scripts\PhysicsSimulationUpdater.cs" />
     <Compile Include="Assets\Scripts\OrbitMouse.cs" />
     <Compile Include="Assets\Scripts\World.cs" />
@@ -76,17 +78,19 @@
     <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
     <Compile Include="Assets\Scripts\HandleForce.cs" />
     <Compile Include="Assets\Mente Bacata\Scivolo Character Controller\Demo\Scripts\LevelRotator.cs" />
+    <Compile Include="Assets\Scripts\Combatant.cs" />
     <Compile Include="Assets\Scripts\MonsterAI.cs" />
     <Compile Include="Assets\Scripts\Spawner.cs" />
     <Compile Include="Assets\Scripts\SceneController.cs" />
     <Compile Include="Assets\Scripts\HandleLieTruth.cs" />
     <Compile Include="Assets\Scripts\Drive.cs" />
-    <Compile Include="Assets\Scripts\Main.cs" />
-    <Compile Include="Assets\Scripts\Combatant.cs" />
-    <Compile Include="Assets\Scripts\TrapLifespan.cs" />
-    <Compile Include="Assets\LevelController.cs" />
-    <Compile Include="Assets\MonsterSpawner.cs" />
     <Compile Include="Assets\RespawnPlayer.cs" />
+    <Compile Include="Assets\MonsterSpawner.cs" />
+    <Compile Include="Assets\TrippyMesh.cs" />
+    <Compile Include="Assets\Scripts\Main.cs" />
+    <Compile Include="Assets\FollowerAI.cs" />
+    <Compile Include="Assets\Scripts\Bot.cs" />
+    <Compile Include="Assets\OperateLevers.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

@@ -16,6 +16,9 @@ public class PlaceTrap : MonoBehaviour
      */
     public void ApplyPlaceTrap()
     {
+        if(!GetComponent<MenteBacata.ScivoloCharacterControllerDemo.SimpleCharacterController>().isGrounded) {
+            return;
+        }
         Debug.Log("Placing trap!");
         GameObject.Instantiate(trapPrefab, placeTrapAim.transform.position, Quaternion.identity);
         /**

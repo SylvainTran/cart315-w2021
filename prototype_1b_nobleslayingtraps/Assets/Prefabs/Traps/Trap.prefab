@@ -146,7 +146,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionPrefab: {fileID: 4479591457896037529, guid: 70c0e6656560b1f4388accb1bdf1b0e3, type: 3}
   explosionSoundFX: {fileID: 0}
-  explosionForce: 10
+  textDamagePrefab: {fileID: 7629358813353353295, guid: 130025166a984a844a4e76fcf42ec163, type: 3}
+  textDamage: Claymore Trap!
+  explosionForce: 3
   trapDamage: 10
   explosionForceVector: {x: 0, y: 1, z: 0}
 --- !u!82 &80620150034794470

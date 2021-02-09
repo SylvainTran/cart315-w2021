@@ -7,6 +7,8 @@ public class Explode : MonoBehaviour
 {
     public GameObject explosionPrefab;
     public AudioClip explosionSoundFX;
+    public GameObject textDamagePrefab;
+    public string textDamage;
     public float explosionForce = 10.0f;
     public float trapDamage = 10.0f;
     public Vector3 explosionForceVector;
@@ -17,6 +19,7 @@ public class Explode : MonoBehaviour
         GetComponent<AudioSource>().Play();
         GameObject explosion = Instantiate(explosionPrefab);
         explosion.transform.SetParent(this.transform);
+        explosion.transform.position = this.transform.position;
         StartCoroutine(RemoveExplosion(1.5f));
     }
 
@@ -24,6 +27,15 @@ public class Explode : MonoBehaviour
     {
         yield return new WaitForSeconds(delay);
         Destroy(this.gameObject);
+    }
+
+    public void ShowTextDamage(GameObject m)
+    {
+        Debug.Log("Showing text damage: " + textDamage + " " + trapDamage + " !");
+        GameObject t = Instantiate(textDamagePrefab);
+        t.transform.SetParent(m.transform);
+        t.transform.position = m.transform.position;
+        t.GetComponent<TextMesh>().text = textDamage + " " + trapDamage + " !";
     }
 
     public void InfluenceEnemyRigidbody(GameObject m)
@@ -46,6 +58,7 @@ public class Explode : MonoBehaviour
             ApplyExplode();
             InfluenceEnemyRigidbody(collider.gameObject);
             DamageEnemy(collider.gameObject);
+            ShowTextDamage(collider.gameObject);
         }
     }
 }

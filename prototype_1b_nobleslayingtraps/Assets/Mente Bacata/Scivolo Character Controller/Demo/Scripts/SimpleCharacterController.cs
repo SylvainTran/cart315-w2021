@@ -8,6 +8,7 @@ namespace MenteBacata.ScivoloCharacterControllerDemo
 {
     public class SimpleCharacterController : MonoBehaviour
     {
+        public bool isGrounded; // To allow placing traps if grounded only
         public float moveSpeed = 5f;
 
         public float jumpSpeed = 8f;
@@ -66,7 +67,7 @@ namespace MenteBacata.ScivoloCharacterControllerDemo
             if (IsSafelyGrounded(groundDetected, groundInfo.isOnFloor))
                 nextUngroundedTime = Time.time + timeBeforeUngrounded;
 
-            bool isGrounded = Time.time < nextUngroundedTime;
+            isGrounded = Time.time < nextUngroundedTime;
 
             SetGroundedIndicatorColor(isGrounded);
 
