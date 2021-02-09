@@ -9,9 +9,9 @@ public class Bot : MonoBehaviour
 {
     UnityEngine.AI.NavMeshAgent agent;
     public GameObject target;
-    public float wanderRadius = 2;
-    public float wanderDistance = 2;
-    public float wanderJitter = 1;
+    public float wanderRadius;
+    public float wanderDistance;
+    public float wanderJitter;
     SimpleCharacterController ds;
 
     // Start is called before the first frame update
@@ -61,10 +61,6 @@ public class Bot : MonoBehaviour
     Vector3 wanderTarget = Vector3.zero;
     public void Wander()
     {
-        wanderRadius = 2;
-        wanderDistance = 2;
-        wanderJitter = 1;
-
         wanderTarget += new Vector3(Random.Range(-1.0f, 1.0f) * wanderJitter,
                                         0,
                                         Random.Range(-1.0f, 1.0f) * wanderJitter);
@@ -73,7 +69,7 @@ public class Bot : MonoBehaviour
 
         Vector3 targetLocal = wanderTarget + new Vector3(0, 0, wanderDistance);
         Vector3 targetWorld = this.gameObject.transform.InverseTransformVector(targetLocal);
-
+        Debug.Log("Target world: " + targetWorld);
         Seek(targetWorld);
     }
 
@@ -157,5 +153,19 @@ public class Bot : MonoBehaviour
     public void BehaviourCoolDown()
     {
         coolDown = false;
+    }
+
+    public void CloseCorridors()
+    {
+        int closeDoorsAreaMask = (1 << 0) | (1 << 3);
+        NavMeshAgent nav = GetComponent<NavMeshAgent>();
+        nav.areaMask = closeDoorsAreaMask;
+    }
+
+    public void SetAllAreaMask()
+    {
+        int openAllAreasMask = (1 << 0) | (1 << 2) | (1 << 3);
+        NavMeshAgent nav = GetComponent<NavMeshAgent>();
+        nav.areaMask = openAllAreasMask;
     }
 }

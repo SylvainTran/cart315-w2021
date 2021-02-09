@@ -11,6 +11,7 @@ TagManager:
   - Follower
   - OpenAllDoorsLever
   - CloseAllDoorsLever
+  - FecebookSpawner
   layers:
   - Default
   - TransparentFX

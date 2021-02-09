@@ -70,13 +70,16 @@
     <Compile Include="Assets\Scripts\TrapLifespan.cs" />
     <Compile Include="Assets\Mente Bacata\Scivolo Character Controller\Demo\Scripts\PhysicsSimulationUpdater.cs" />
     <Compile Include="Assets\Scripts\OrbitMouse.cs" />
+    <Compile Include="Assets\OperateLevers.cs" />
     <Compile Include="Assets\Scripts\World.cs" />
+    <Compile Include="Assets\FollowerAI.cs" />
     <Compile Include="Assets\Mente Bacata\Scivolo Character Controller\Demo\Scripts\MovingPlatform.cs" />
     <Compile Include="Assets\Scripts\Explode.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\CameraSwitch.cs" />
     <Compile Include="Assets\Scripts\ballCollision.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
     <Compile Include="Assets\Scripts\HandleForce.cs" />
+    <Compile Include="Assets\Scripts\Bot.cs" />
     <Compile Include="Assets\Mente Bacata\Scivolo Character Controller\Demo\Scripts\LevelRotator.cs" />
     <Compile Include="Assets\Scripts\Combatant.cs" />
     <Compile Include="Assets\Scripts\MonsterAI.cs" />
@@ -88,9 +91,10 @@
     <Compile Include="Assets\MonsterSpawner.cs" />
     <Compile Include="Assets\TrippyMesh.cs" />
     <Compile Include="Assets\Scripts\Main.cs" />
-    <Compile Include="Assets\FollowerAI.cs" />
-    <Compile Include="Assets\Scripts\Bot.cs" />
-    <Compile Include="Assets\OperateLevers.cs" />
+    <Compile Include="Assets\RainMaker\Prefab\BaseRainScript.cs" />
+    <Compile Include="Assets\RainMaker\Prefab\RainCollision.cs" />
+    <Compile Include="Assets\RainMaker\Prefab\RainScript2D.cs" />
+    <Compile Include="Assets\RainMaker\Prefab\RainScript.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -99,6 +103,7 @@
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+     <None Include="Assets\RainMaker\Readme.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
      <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
@@ -108,6 +113,7 @@
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+     <None Include="Assets\RainMaker\Prefab\RainShader.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />

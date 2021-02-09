@@ -2,17 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FollowerAI : MonoBehaviour
+public class FollowerAI : Bot
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    float wanderRadius = 1f;
+    float wanderDistance = 1f;
+    float wanderJitter = 1.5f;
+    public float maxFollowDistance = 2f;
 
-    // Update is called once per frame
-    void Update()
+    public void Update()
     {
-        
+        float d = Vector3.Distance(this.transform.position, target.transform.position);
+        Debug.Log("Distance to player: " + d);
+        if (CanSeeTarget() && d <= maxFollowDistance && TargetCanSeeMe())
+        {
+            Seek(target.transform.position);
+        }
     }
 }
