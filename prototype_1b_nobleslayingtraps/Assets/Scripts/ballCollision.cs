@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ballCollision : MonoBehaviour
+public class BallCollision : MonoBehaviour
 {
     public GameObject player;
     public Vector3 collisionForce;

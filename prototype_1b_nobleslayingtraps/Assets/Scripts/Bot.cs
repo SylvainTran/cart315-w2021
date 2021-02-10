@@ -69,7 +69,6 @@ public class Bot : MonoBehaviour
 
         Vector3 targetLocal = wanderTarget + new Vector3(0, 0, wanderDistance);
         Vector3 targetWorld = this.gameObject.transform.InverseTransformVector(targetLocal);
-        Debug.Log("Target world: " + targetWorld);
         Seek(targetWorld);
     }
 

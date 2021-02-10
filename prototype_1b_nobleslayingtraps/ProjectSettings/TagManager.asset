@@ -12,6 +12,11 @@ TagManager:
   - OpenAllDoorsLever
   - CloseAllDoorsLever
   - FecebookSpawner
+  - TrapShop
+  - AchievementsShop
+  - ShopCanvasUI
+  - PlayerJournalUI
+  - TrapsCountDisplay
   layers:
   - Default
   - TransparentFX
