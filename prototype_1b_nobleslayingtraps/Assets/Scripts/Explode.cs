@@ -40,7 +40,13 @@ public class Explode : MonoBehaviour
 
     public void InfluenceEnemyRigidbody(GameObject m)
     {
-        m.GetComponent<MonsterAI>().enabled = false;
+        if(m.GetComponent<MonsterAI>())
+        {
+            m.GetComponent<MonsterAI>().enabled = false;
+        } else if(m.GetComponent<FollowerAI>())
+        {
+            m.GetComponent<FollowerAI>().enabled = false;
+        }
         m.GetComponent<NavMeshAgent>().enabled = false;
         m.GetComponent<Rigidbody>().AddRelativeForce(explosionForceVector * explosionForce);
     }
@@ -52,7 +58,7 @@ public class Explode : MonoBehaviour
 
     private void OnTriggerEnter(Collider collider)
     {
-        if(collider.CompareTag("Monster"))
+        if(collider.CompareTag("Monster") || collider.CompareTag("Follower"))
         {
             // Blow-up
             ApplyExplode();

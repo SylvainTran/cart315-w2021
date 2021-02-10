@@ -9,13 +9,15 @@ public class MonsterAI : Bot
 {
     public void Update()
     {
-        //Wander();
+        Wander();
         if (!coolDown)
         {
             // Wander until in range of player
-            if (CanSeeTarget() && TargetCanSeeMe())
+            if (CanSeeTarget() && !TargetCanSeeMe())
             {
                 Pursue();
+            } else if (CanSeeTarget() && TargetCanSeeMe()) {
+                Evade();
             }
         }
     }

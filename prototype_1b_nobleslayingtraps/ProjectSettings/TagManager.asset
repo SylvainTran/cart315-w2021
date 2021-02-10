@@ -17,6 +17,9 @@ TagManager:
   - ShopCanvasUI
   - PlayerJournalUI
   - TrapsCountDisplay
+  - UIGameCanvas
+  - MainTextTrapShop
+  - ClockTimer
   layers:
   - Default
   - TransparentFX

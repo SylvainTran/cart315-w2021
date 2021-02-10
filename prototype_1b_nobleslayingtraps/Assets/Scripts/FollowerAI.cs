@@ -9,7 +9,6 @@ public class FollowerAI : Bot
     public void Update()
     {
         float d = Vector3.Distance(this.transform.position, target.transform.position);
-        Debug.Log("Distance to player: " + d);
         if (CanSeeTarget() && d <= maxFollowDistance && TargetCanSeeMe())
         {
             Seek(target.transform.position);

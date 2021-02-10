@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class TrapInventory : MonoBehaviour
 {
-    public static int TRAP_MAX_AMOUNT = 3; // Max traps
+    public static int TRAP_MAX_AMOUNT = 30; // Max traps
     public static int trapsInInventoryCount = 0; // How many traps currently have
     public static List<Trap> traps;
 

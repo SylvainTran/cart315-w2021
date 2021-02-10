@@ -21,6 +21,12 @@ EditorBuildSettings:
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: d887fd3697aae944cb575e2c477d09bd
+  - enabled: 1
+    path: Assets/Scenes/Template.unity
+    guid: 0acab22c5b8f0304a90530a58e7c62bc
+  - enabled: 1
     path: Assets/Scenes/Arena.unity
     guid: f5206c23ac2844ae6ba6404e580ccfaa
   m_configObjects: {}

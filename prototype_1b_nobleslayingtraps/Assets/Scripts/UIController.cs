@@ -23,9 +23,15 @@ public class UIController : MonoBehaviour
 
     public static void UpdateTrapCounterDisplay()
     {
-        // Temporary fix.
+        GameObject mainTextTrapShop = GameObject.FindWithTag("MainTextTrapShop");
+        if(mainTextTrapShop)
+        {
+            mainTextTrapShop.gameObject.GetComponent<TextMeshProUGUI>().SetText("You bought a trap for a total of: " + TrapInventory.trapsInInventoryCount);
+        }
         GameObject tcd = GameObject.FindWithTag("TrapsCountDisplay");
-        tcd.gameObject.GetComponent<TextMeshProUGUI>().SetText("Traps: " + TrapInventory.trapsInInventoryCount);
+        if(tcd) {
+            tcd.gameObject.GetComponent<TextMeshProUGUI>().SetText("Traps: " + TrapInventory.trapsInInventoryCount);
+        }    
     }
 
     public static void UpdateTrapFameScoreDisplay()
@@ -36,5 +42,12 @@ public class UIController : MonoBehaviour
     public static void UpdateTrapHouseSinkingRateDisplay()
     {
         //HOUSE_SINKING_RATE_DISPLAY.GetComponent<TextMeshPro>().SetText("House Sinking Rate: m/s");
+    }
+
+    private IEnumerator ResetMainTextTrapShop(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        GameObject mainTextTrapShop = GameObject.FindWithTag("MainTextTrapShop");
+        mainTextTrapShop.gameObject.GetComponent<TextMeshProUGUI>().SetText("\"I love myself a good trap with spaghetti and lasagna all during breakfast.\" - Mountain Side Inc CEO, self-avowed trap addict");
     }
 }

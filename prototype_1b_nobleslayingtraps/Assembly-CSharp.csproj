@@ -57,19 +57,24 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\SampleScenes\Scripts\ParticleSceneControls.cs" />
+    <Compile Include="Assets\Scripts\TrapShopController.cs" />
     <Compile Include="Assets\Scripts\PlaceTrap.cs" />
     <Compile Include="Assets\Scripts\ChasePlayer.cs" />
     <Compile Include="Assets\Mente Bacata\Scivolo Character Controller\Demo\Scripts\SimpleCharacterController.cs" />
     <Compile Include="Assets\Scripts\Rotator.cs" />
     <Compile Include="Assets\Mente Bacata\Scivolo Character Controller\Demo\Scripts\OrbitingCamera.cs" />
+    <Compile Include="Assets\Scripts\ClaymoreTrap.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\LevelReset.cs" />
     <Compile Include="Assets\Scripts\LevelController.cs" />
+    <Compile Include="Assets\Scripts\Trap.cs" />
     <Compile Include="Assets\Scripts\BuildAtPoint.cs" />
     <Compile Include="Assets\Scripts\PickUp.cs" />
     <Compile Include="Assets\Scripts\TrapLifespan.cs" />
+    <Compile Include="Assets\Scripts\TrapInventory.cs" />
     <Compile Include="Assets\RainMaker\Prefab\RainCollision.cs" />
     <Compile Include="Assets\Mente Bacata\Scivolo Character Controller\Demo\Scripts\PhysicsSimulationUpdater.cs" />
+    <Compile Include="Assets\Scripts\BuyTraps.cs" />
     <Compile Include="Assets\Scripts\OrbitMouse.cs" />
     <Compile Include="Assets\Scripts\OperateLevers.cs" />
     <Compile Include="Assets\Scripts\World.cs" />
@@ -82,6 +87,7 @@
     <Compile Include="Assets\Scripts\BallCollision.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
     <Compile Include="Assets\Scripts\HandleForce.cs" />
+    <Compile Include="Assets\Scripts\HighlightController.cs" />
     <Compile Include="Assets\Scripts\Bot.cs" />
     <Compile Include="Assets\Mente Bacata\Scivolo Character Controller\Demo\Scripts\LevelRotator.cs" />
     <Compile Include="Assets\Scripts\Combatant.cs" />
@@ -90,18 +96,14 @@
     <Compile Include="Assets\Scripts\Spawner.cs" />
     <Compile Include="Assets\Scripts\SceneController.cs" />
     <Compile Include="Assets\Scripts\HandleLieTruth.cs" />
+    <Compile Include="Assets\Scripts\UIController.cs" />
     <Compile Include="Assets\Scripts\Drive.cs" />
     <Compile Include="Assets\Scripts\RespawnPlayer.cs" />
     <Compile Include="Assets\Scripts\MonsterSpawner.cs" />
     <Compile Include="Assets\Scripts\TrippyMesh.cs" />
     <Compile Include="Assets\Scripts\Main.cs" />
-    <Compile Include="Assets\Scripts\HighlightController.cs" />
-    <Compile Include="Assets\Scripts\TrapInventory.cs" />
-    <Compile Include="Assets\Scripts\Trap.cs" />
-    <Compile Include="Assets\Scripts\ClaymoreTrap.cs" />
-    <Compile Include="Assets\Scripts\UIController.cs" />
-    <Compile Include="Assets\Scripts\TrapShopController.cs" />
-    <Compile Include="Assets\Scripts\BuyTraps.cs" />
+    <Compile Include="Assets\Scripts\FameInventory.cs" />
+    <Compile Include="Assets\DontDestroy.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
