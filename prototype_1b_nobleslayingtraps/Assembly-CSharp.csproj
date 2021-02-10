@@ -65,6 +65,7 @@
     <Compile Include="Assets\Mente Bacata\Scivolo Character Controller\Demo\Scripts\OrbitingCamera.cs" />
     <Compile Include="Assets\Scripts\ClaymoreTrap.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
+    <Compile Include="Assets\DontDestroy.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\LevelReset.cs" />
     <Compile Include="Assets\Scripts\LevelController.cs" />
     <Compile Include="Assets\Scripts\Trap.cs" />
@@ -93,6 +94,7 @@
     <Compile Include="Assets\Scripts\Combatant.cs" />
     <Compile Include="Assets\Scripts\MonsterAI.cs" />
     <Compile Include="Assets\RainMaker\Prefab\RainScript.cs" />
+    <Compile Include="Assets\Scripts\FameInventory.cs" />
     <Compile Include="Assets\Scripts\Spawner.cs" />
     <Compile Include="Assets\Scripts\SceneController.cs" />
     <Compile Include="Assets\Scripts\HandleLieTruth.cs" />
@@ -102,8 +104,8 @@
     <Compile Include="Assets\Scripts\MonsterSpawner.cs" />
     <Compile Include="Assets\Scripts\TrippyMesh.cs" />
     <Compile Include="Assets\Scripts\Main.cs" />
-    <Compile Include="Assets\Scripts\FameInventory.cs" />
-    <Compile Include="Assets\DontDestroy.cs" />
+    <Compile Include="Assets\EnemySpawnerController.cs" />
+    <Compile Include="Assets\ArenaController.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Combatant : MonoBehaviour
 {
     private float health = 100.0f;
     private float exp = 10.0f;
-    private int strength = 5;
+    private int strength = 30;
+    public GameObject gameOverScreen;
 
     public float Health {
         get { return health; }
@@ -56,9 +58,36 @@ public class Combatant : MonoBehaviour
         return alive;
     }
 
+    private void Attack(float damage)
+    {
+
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(this.gameObject.tag == "Monster" && other.gameObject.CompareTag("Player"))
+        {
+            if(other.gameObject.GetComponent<Combatant>().Health <= 0f) {
+                GetComponent<MonsterAI>().Evade();
+            } else {
+                other.gameObject.GetComponent<Combatant>().TakeDamage(strength);
+            }
+        }
+    }
+
     public void Die()
     {
+        if(this.gameObject.tag == "Player")
+        {
+            gameOverScreen = GameObject.FindGameObjectWithTag("GameOverScreen");
+            if(gameOverScreen)
+            {
+                gameOverScreen.SetActive(true);
+            }
+            return;
+        }
         Debug.Log("Death ensued.");
         Destroy(this.gameObject);
+        // Update level temporary check
     }
 }

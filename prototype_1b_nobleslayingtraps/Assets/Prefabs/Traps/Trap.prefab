@@ -148,9 +148,9 @@ MonoBehaviour:
   explosionSoundFX: {fileID: 0}
   textDamagePrefab: {fileID: 7629358813353353295, guid: 130025166a984a844a4e76fcf42ec163, type: 3}
   textDamage: Claymore Trap!
-  explosionForce: 3
-  trapDamage: 10
-  explosionForceVector: {x: 0, y: 1, z: 0}
+  explosionForce: 10
+  trapDamage: 50
+  explosionForceVector: {x: 0, y: 10, z: 0}
 --- !u!82 &80620150034794470
 AudioSource:
   m_ObjectHideFlags: 0

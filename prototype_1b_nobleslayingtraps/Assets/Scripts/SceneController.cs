@@ -20,15 +20,19 @@ public class SceneController : MonoBehaviour
 
     void Update()
     {
-        // seconds in float
-        timer += Time.deltaTime;
-        // turn seconds in float to int
-        seconds = (int)(timer % 10);
-        //print(seconds);
-        clockTimerUIText.SetText(10 - seconds + " seconds.");
-        if (10 - seconds <= 0)
+        if (SceneManager.GetActiveScene().name == "Template")
         {
-            SceneManager.LoadScene("Arena");
+            // seconds in float
+            timer += Time.deltaTime;
+            // turn seconds in float to int
+            seconds = (int)(timer % 60);
+            //print(seconds);
+            clockTimerUIText.SetText(60 - seconds + " seconds.");
+
+            if (60 - seconds <= 1)
+            {
+                SceneManager.LoadScene("Arena");
+            }
         }
     }
 
