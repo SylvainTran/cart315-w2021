@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement; // Temporary fix, due to some issue with the static call to HandleScene's StartChangeScene
+using UnityEngine.SceneManagement;
 
 public class PickUp : MonoBehaviour
 {

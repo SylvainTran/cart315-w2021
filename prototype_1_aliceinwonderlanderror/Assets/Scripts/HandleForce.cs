@@ -21,6 +21,5 @@ public class HandleForce : MonoBehaviour
     private void OnMouseDown()
     {
         GetComponent<Rigidbody>().AddRelativeForce(relForce);
-        // Pop up opt-out option
     }
 }

@@ -12,7 +12,6 @@ public class HandleScene : MonoBehaviour
     }
     // Static method for ease
     public static void ChangeScene() {
-        Debug.Log("INSIDE STATIC CHANGING SCENE");
         // There is a bug with unity's scenemanagement methods related to using build index (int)
         if (SceneManager.GetActiveScene().name == "Preface")
         {
