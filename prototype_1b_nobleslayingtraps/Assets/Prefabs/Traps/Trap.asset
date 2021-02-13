@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db7173d335b2c6043ae1045cd68d85b1, type: 3}
+  m_Name: Trap
+  m_EditorClassIdentifier: 
+  trapDamage: 1
+  trapEffectRadius: 1
+  sizeInInventory: 1
+  explosionForceVector: {x: 0, y: 0, z: 0}
+  explosionPrefab: {fileID: 4479591457896037529, guid: 70c0e6656560b1f4388accb1bdf1b0e3, type: 3}
+  explosionSoundFX: {fileID: 8300000, guid: 5b833a9109f7d924b904206ffd2b91fc, type: 3}
+  textDamagePrefab: {fileID: 1504676316850386096, guid: b725808fb9b784f7181391f6662088fe, type: 3}
+  textDamage: Trap!

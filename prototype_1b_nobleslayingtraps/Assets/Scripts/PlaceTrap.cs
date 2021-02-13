@@ -12,7 +12,7 @@ public class PlaceTrap : MonoBehaviour
     public GameObject timeTrap;
     public GameObject nukeTrap;
     public GameObject placeTrapAim;
-    private float delay = 45.0f;
+    //private float delay = 45.0f;
     public enum TRAP_TYPES { CLAYMORE, GRAVITY, LOVE, C4, TIME, NUKE, MAGNET };
 
     // Events for the UI

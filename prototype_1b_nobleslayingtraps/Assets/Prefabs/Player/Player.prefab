@@ -657,6 +657,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b9da24540550a34898b03359f122140, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameOverScreen: {fileID: 0}
 --- !u!114 &1709154931757690411
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -681,7 +682,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dd91703f8e8b4041a895fb2c1a90417, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  claymoreTrap: {fileID: 7378499511327020004, guid: f70672431481848b0b2b6bcdeea863cb, type: 3}
+  claymoreTrap: {fileID: 7378499511327020004, guid: b0e1b4e2924bc0b4595d7128ddfed7db, type: 3}
   gravityTrap: {fileID: 0}
   loveTrap: {fileID: 0}
   fartTrap: {fileID: 0}

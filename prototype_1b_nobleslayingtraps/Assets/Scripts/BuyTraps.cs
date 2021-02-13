@@ -26,7 +26,9 @@ public class BuyTraps : MonoBehaviour
         {
             Debug.Log("Adding a claymore trap to inventory");
             ++TrapInventory.trapsInInventoryCount;
-            TrapInventory.AddToInventory(new ClaymoreTrap());
+            // This uses the Scriptable Object Constructor instead of invoking "new ClaymoreTrap()"
+            ClaymoreTrap claymoreTrap = ScriptableObject.CreateInstance<ClaymoreTrap>();
+            TrapInventory.AddToInventory(claymoreTrap);
             // Update UI via event
             UIOnBuyClaymoreTrap();
         }

@@ -46,7 +46,7 @@ public class Combatant : MonoBehaviour
     public bool TakeDamage(float damage)
     {
         health -= damage;
-        Debug.Log("Damage taken! " + damage);
+        Debug.Log("Damage taken: " + damage);
         Debug.Log("HP: " + health);
         if(health <= 0)
         {
@@ -65,6 +65,9 @@ public class Combatant : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        if(!alive) {
+            return;
+        }
         if(this.gameObject.tag == "Monster" && other.gameObject.CompareTag("Player"))
         {
             if(other.gameObject.GetComponent<Combatant>().Health <= 0f) {
@@ -87,6 +90,7 @@ public class Combatant : MonoBehaviour
             return;
         }
         Debug.Log("Death ensued.");
+        alive = false;
         Destroy(this.gameObject);
         // Update level temporary check
     }

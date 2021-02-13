@@ -764,3 +764,15 @@ System memory in use after: 77.0 MB.
 Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1974.
 Total: 2.620600 ms (FindLiveObjects: 0.406100 ms CreateObjectMapping: 0.178500 ms MarkObjects: 1.951100 ms  DeleteObjects: 0.083400 ms)
 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 2.28 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 47.4 MB.
+System memory in use after: 47.4 MB.
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 1974.
+Total: 3.934200 ms (FindLiveObjects: 0.188900 ms CreateObjectMapping: 0.061100 ms MarkObjects: 3.596200 ms  DeleteObjects: 0.085800 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

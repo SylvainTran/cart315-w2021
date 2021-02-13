@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 80620150034794470}
   - component: {fileID: 81089461808690003}
   m_Layer: 0
-  m_Name: Trap
+  m_Name: ClaymoreTrap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -127,7 +127,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 269180d2aa0fa9b4aa618f9384b5a0c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trap: {fileID: 11400000, guid: 4143029c05f6cc84ab702d4cb78f3151, type: 2}
+  trap: {fileID: 11400000, guid: f92808087bc114d43864d3d4ae448907, type: 2}
 --- !u!82 &80620150034794470
 AudioSource:
   m_ObjectHideFlags: 0

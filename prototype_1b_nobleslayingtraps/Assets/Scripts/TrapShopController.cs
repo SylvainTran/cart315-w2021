@@ -19,7 +19,7 @@ public class TrapShopController : MonoBehaviour
         {
             return;
         }
-        if(!trapShopUI.active)
+        if(!trapShopUI.activeSelf)
         {
             trapShopUI.SetActive(true);
             UIGameCanvas.SetActive(false);
@@ -33,7 +33,7 @@ public class TrapShopController : MonoBehaviour
         {
             return;
         }
-        if (trapShopUI.active)
+        if (trapShopUI.activeSelf)
         {
             trapShopUI.SetActive(false);
             UIGameCanvas.SetActive(true);

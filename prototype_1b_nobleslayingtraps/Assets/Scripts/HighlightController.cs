@@ -22,7 +22,6 @@ public class HighlightController : MonoBehaviour
         if (!collider.gameObject.CompareTag("Player")) {
             return;
         }
-        Debug.Log("HIGHLIGHTING LEVER");
         // Swap to highlight mat at the second index
         mats[1] = highlightMaterial;
         rend.materials = mats;
@@ -34,7 +33,6 @@ public class HighlightController : MonoBehaviour
         {
             return;
         }
-        Debug.Log("UNHIGHLIGHTING LEVER");
         mats[0] = defaultMaterial;
         mats[1] = null;
         rend.materials = mats;
