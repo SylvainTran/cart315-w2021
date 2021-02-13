@@ -1,0 +1,5 @@
+Playtesters:
+
+Start the game at the MainMenu scene or Template scene.
+Arena is used from the game.
+TrapSandbox is my trap development scene.
