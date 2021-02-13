@@ -1,14 +1,19 @@
 {
   "ExpandedNodes": [
     "",
-    "\\prototype_1b_nobleslayingtraps",
     "\\prototype_1b_nobleslayingtraps\\Assets",
     "\\prototype_1b_nobleslayingtraps\\Assets\\Mente Bacata",
     "\\prototype_1b_nobleslayingtraps\\Assets\\Mente Bacata\\Scivolo Character Controller",
     "\\prototype_1b_nobleslayingtraps\\Assets\\Mente Bacata\\Scivolo Character Controller\\Demo",
     "\\prototype_1b_nobleslayingtraps\\Assets\\Mente Bacata\\Scivolo Character Controller\\Demo\\Scripts",
-    "\\prototype_1b_nobleslayingtraps\\Assets\\Scripts"
+    "\\prototype_2",
+    "\\prototype_2\\Cart315_Prototype_2",
+    "\\prototype_2\\Cart315_Prototype_2\\Assets",
+    "\\prototype_2\\Cart315_Prototype_2\\Assets\\Samples",
+    "\\prototype_2\\Cart315_Prototype_2\\Assets\\Samples\\Input System",
+    "\\prototype_2\\Cart315_Prototype_2\\Assets\\Samples\\Input System\\1.0.2",
+    "\\prototype_2\\Cart315_Prototype_2\\Assets\\Samples\\Input System\\1.0.2\\Simple Demo"
   ],
-  "SelectedNode": "\\prototype_1b_nobleslayingtraps\\Assets\\Scripts\\Combatant.cs",
+  "SelectedNode": "\\prototype_2\\Cart315_Prototype_2\\Assets\\Samples\\Input System\\1.0.2\\Simple Demo\\SimpleController_UsingPlayerInput.cs",
   "PreviewInSolutionExplorer": false
 }

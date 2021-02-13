@@ -64,6 +64,7 @@
     <Compile Include="Assets\Scripts\Rotator.cs" />
     <Compile Include="Assets\Mente Bacata\Scivolo Character Controller\Demo\Scripts\OrbitingCamera.cs" />
     <Compile Include="Assets\Scripts\ClaymoreTrap.cs" />
+    <Compile Include="Assets\ArenaController.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
     <Compile Include="Assets\DontDestroy.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\LevelReset.cs" />
@@ -73,6 +74,7 @@
     <Compile Include="Assets\Scripts\PickUp.cs" />
     <Compile Include="Assets\Scripts\TrapLifespan.cs" />
     <Compile Include="Assets\Scripts\TrapInventory.cs" />
+    <Compile Include="Assets\EnemySpawnerController.cs" />
     <Compile Include="Assets\RainMaker\Prefab\RainCollision.cs" />
     <Compile Include="Assets\Mente Bacata\Scivolo Character Controller\Demo\Scripts\PhysicsSimulationUpdater.cs" />
     <Compile Include="Assets\Scripts\BuyTraps.cs" />
@@ -104,8 +106,7 @@
     <Compile Include="Assets\Scripts\MonsterSpawner.cs" />
     <Compile Include="Assets\Scripts\TrippyMesh.cs" />
     <Compile Include="Assets\Scripts\Main.cs" />
-    <Compile Include="Assets\EnemySpawnerController.cs" />
-    <Compile Include="Assets\ArenaController.cs" />
+    <Compile Include="Assets\Scripts\GravityTrap.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

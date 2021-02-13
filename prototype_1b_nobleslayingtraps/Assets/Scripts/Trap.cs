@@ -12,4 +12,18 @@ public class Trap
     public float TrapEffectRadius { get { return trapEffectRadius; } set { trapEffectRadius = value; } }
     private int sizeInInventory = 1;
     public int SizeInInventory { get { return sizeInInventory; } }
+
+    public override bool Equals(System.Object obj)
+    {
+        //Check for null and compare run-time types.
+        if ((obj == null) || !this.GetType().Equals(obj.GetType()))
+        {
+            return false;
+        }
+        else
+        {
+            Trap p = (Trap)obj;
+            return (TrapID == p.TrapID);
+        }
+    }
 }
