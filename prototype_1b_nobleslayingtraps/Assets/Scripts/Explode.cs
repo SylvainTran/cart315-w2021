@@ -116,7 +116,7 @@ public class Explode : MonoBehaviour
             InfluenceEnemyRigidbody(collider.gameObject);
             StartCoroutine(RestoreAIComponent(collider.gameObject, 1.5f));
             DamageEnemy(collider.gameObject);
-            ShowTextDamage(collider.gameObject); // To be refactored into ui events
+            //ShowTextDamage(collider.gameObject); // To be refactored into ui events
         }
     }
 }
