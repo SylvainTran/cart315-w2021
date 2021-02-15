@@ -68,15 +68,40 @@ public class Explode : MonoBehaviour
             m.GetComponent<FollowerAI>().enabled = false;
         }
         m.GetComponent<NavMeshAgent>().enabled = false;
-        m.GetComponent<Rigidbody>().AddRelativeForce(trap.ExplosionForceVector * trap.TrapEffectRadius);
+        m.GetComponent<Rigidbody>().useGravity = false;
+        m.GetComponent<Rigidbody>().isKinematic = false;
+        // Debug.Log("Boom");
+        m.GetComponent<Rigidbody>().AddRelativeForce(Vector3.up * trap.TrapEffectRadius);
     }
+    /**
+    * Restores the AI component after a while if 
+    * the combatant has survived the trap's effects.
+    */
+    private IEnumerator RestoreAIComponent(GameObject m, float delay) 
+    {
+        yield return new WaitForSeconds(delay);
+        if(m == null || !m.GetComponent<Combatant>().Alive) {
+            yield break;
+        }
+        Debug.Log("Falling back down with gravity");
+        m.GetComponent<Rigidbody>().useGravity = true;
+        m.GetComponent<NavMeshAgent>().enabled = true;
+        if(m.GetComponent<MonsterAI>())
+        {
+            m.GetComponent<MonsterAI>().enabled = true;
+        } else if(m.GetComponent<FollowerAI>())
+        {
+            m.GetComponent<FollowerAI>().enabled = true;
+        }
+    }
+
     /**
     * Damage the enemy according to their combatant
     * stats.
     */
     public void DamageEnemy(GameObject m)
     {
-        m.GetComponent<Combatant>().TakeDamage(trap.TrapEffectRadius * trap.TrapDamage);
+        m.GetComponent<Combatant>().TakeDamage(trap.TrapDamage);
     }
     /**
     * Handles collider events to trigger the explosion
@@ -89,6 +114,7 @@ public class Explode : MonoBehaviour
             // Blow-up
             ApplyExplode();
             InfluenceEnemyRigidbody(collider.gameObject);
+            StartCoroutine(RestoreAIComponent(collider.gameObject, 1.5f));
             DamageEnemy(collider.gameObject);
             ShowTextDamage(collider.gameObject); // To be refactored into ui events
         }

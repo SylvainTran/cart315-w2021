@@ -15,7 +15,7 @@ MonoBehaviour:
   trapDamage: 1
   trapEffectRadius: 1
   sizeInInventory: 1
-  explosionForceVector: {x: 0, y: 0, z: 0}
+  explosionForceVector: {x: 0, y: 1, z: 0}
   explosionPrefab: {fileID: 4479591457896037529, guid: 70c0e6656560b1f4388accb1bdf1b0e3, type: 3}
   explosionSoundFX: {fileID: 8300000, guid: 5b833a9109f7d924b904206ffd2b91fc, type: 3}
   textDamagePrefab: {fileID: 1504676316850386096, guid: b725808fb9b784f7181391f6662088fe, type: 3}
