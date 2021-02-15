@@ -1252,6 +1252,10 @@ PrefabInstance:
       value: FloorPrototype64x01x64 (1)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 3681543e5b0f59742b73073cb379cdc6, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 3681543e5b0f59742b73073cb379cdc6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -1813,13 +1817,13 @@ GameObject:
   - component: {fileID: 1083767823}
   m_Layer: 0
   m_Name: Bridge
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
   m_IsActive: 1
---- !u!64 &1083767823
-MeshCollider:
+--- !u!65 &1083767823
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1828,10 +1832,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 1594990929}
+  serializedVersion: 2
+  m_Size: {x: 1.84, y: 0.51, z: 17.180424}
+  m_Center: {x: 0.92, y: 0.255, z: -8.590212}
 --- !u!33 &1083767824
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -2727,7 +2730,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh64842
+  m_Name: pb_Mesh68816
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2

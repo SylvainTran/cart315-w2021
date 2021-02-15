@@ -13,21 +13,47 @@ public class Bot : MonoBehaviour
     public float wanderDistance;
     public float wanderJitter;
     SimpleCharacterController ds;
+    public Vector3 navGroundOffset; // To be examined later
 
     // Start is called before the first frame update
     public void Start()
     {
         agent = this.GetComponent<UnityEngine.AI.NavMeshAgent>();
         ds = target.GetComponent<SimpleCharacterController>();
+        agent.autoRepath = true;
+    }
+
+    private void OnTriggerEnter(Collider collider) {
+        if(collider.gameObject.CompareTag("Ground") && !GetComponent<Rigidbody>().isKinematic) {
+            if (!agent.isOnNavMesh)
+            {
+                agent.enabled = true;
+                Vector3 closestPointGround = collider.ClosestPoint(collider.gameObject.transform.position);
+                Vector3 closestPointBot = collider.ClosestPoint(transform.position);
+                Vector3 surfaceCollision = collider.ClosestPoint(closestPointBot) + new Vector3(0f, 1.0f, 0f);
+                agent.Warp(surfaceCollision); // Ensures correct navMesh agent repositioning on the baked mesh
+                GetComponent<Rigidbody>().isKinematic = true;
+                GetComponent<Rigidbody>().useGravity = false;
+            }
+            if(agent.isOnNavMesh && !agent.hasPath || agent.isOnNavMesh && agent.isPathStale) {
+                agent.ResetPath();
+            }
+        }
     }
 
     public void Seek(Vector3 location)
     {
+        if(!agent.isOnNavMesh) {
+            return;
+        }
         agent.SetDestination(location);
     }
 
     public void Flee(Vector3 location)
     {
+        if(!agent.isOnNavMesh) {
+            return;
+        }
         Vector3 fleeVector = location - this.transform.position;
         agent.SetDestination(this.transform.position - fleeVector);
     }

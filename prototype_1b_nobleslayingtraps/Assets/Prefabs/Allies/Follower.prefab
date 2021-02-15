@@ -136,9 +136,9 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!114 &3575135769999872618
 MonoBehaviour:
@@ -152,6 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b9da24540550a34898b03359f122140, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameOverScreen: {fileID: 0}
 --- !u!114 &164398036
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -165,10 +166,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  wanderRadius: 0.2
-  wanderDistance: 0.3
-  wanderJitter: 0.4
-  maxFollowDistance: 2
+  wanderRadius: 1
+  wanderDistance: 1
+  wanderJitter: 1.5
+  maxFollowDistance: 30
 --- !u!1 &3325675936918423868
 GameObject:
   m_ObjectHideFlags: 0
