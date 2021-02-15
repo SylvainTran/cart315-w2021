@@ -55,6 +55,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 031d08f52af1daa4f929b85221519426, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 031d08f52af1daa4f929b85221519426, type: 3}
+      propertyPath: explosionForce
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 19800002, guid: 031d08f52af1daa4f929b85221519426, type: 3}
       propertyPath: InitialModule.startSizeY.minMaxState
       value: 3
