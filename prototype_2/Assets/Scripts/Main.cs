@@ -14,5 +14,7 @@ public sealed class Main : MonoBehaviour
     {
         GameObject main = GameObject.Instantiate(Resources.Load("Initializer")) as GameObject;
         GameObject.DontDestroyOnLoad(main);
+
+        // Momma Cub! Mobile Game
     }
 }
