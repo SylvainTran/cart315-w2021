@@ -72,7 +72,6 @@
     <Compile Include="Assets/Mente Bacata/Scivolo Character Controller/Scripts/Internal/DisplacementOfBestFitCalculator.cs" />
     <Compile Include="Assets/Mente Bacata/Scivolo Character Controller/Scripts/Internal/MovementSurface.cs" />
     <Compile Include="Assets/Scripts/DontDestroy.cs" />
-    <Compile Include="Assets/Scripts/LevelController.cs" />
     <Compile Include="Assets/Scripts/Characters/Character.cs" />
     <Compile Include="Assets/Scripts/Characters/GameAssetTableCharacters.cs" />
     <Compile Include="Assets/Scripts/Item.cs" />

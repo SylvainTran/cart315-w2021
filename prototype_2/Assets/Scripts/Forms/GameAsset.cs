@@ -27,6 +27,15 @@ public class GameAsset : MonoBehaviour
     [SerializeField]
     private string description = default;
     public string Description { get { return description; } set { description = value; } }
-
-    public GameAsset() {}
+    /**
+     * Ref to this game object.
+     */
+    public GameObject thisGameObject;
+    public GameAsset()
+    {
+    }
+    private void Start()
+    {
+        thisGameObject = this.gameObject;
+    }
 }

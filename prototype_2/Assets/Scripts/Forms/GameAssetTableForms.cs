@@ -21,5 +21,22 @@ public class GameAssetTableForms : GameAssetTable<Form>
                 Debug.Log("Table loaded a " + a.GameAssetName + " with content " + GetAsset(a.GameAssetName));
             }
         });
+        // Load up the references to be used for instantiation by other classes
+
+        // Action Forms
+        //Form creationForm;
+        //int len = assets.Count;
+        //Debug.Log("Forms Count: " + len);
+        //for (int i = 0; i < len; i++)
+        //{
+        //    //GetAsset("AcademyCreationForm", out creationForm);
+        //    // Test
+        //    Debug.Log("GAME OBJECT: " + creationForm.thisGameObject);
+        //    // Trigger OnLoaded event? => listener in Level Controller/Main?
+        //     Instantiate the loadded forms
+        //     Attach onClick.AddListener(() => action(index)); on the submit button
+        //     validate the input fields before
+        //}
+
     }
 }
